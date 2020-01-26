@@ -12,4 +12,7 @@ class User < ApplicationRecord
   # passwordを暗号化
   #変数.authenticate('xxx')でログイン認証できるようになる
   has_secure_password
+  
+  #一対多
+  has_many :tasks
 end
